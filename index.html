@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day Planner</title>
+
+</head>
+<body>
+    <div class="timetable"></div>
+    <script src="Dayplanner.js"></script> 
+    <script>
+        var timetable = new Timetable()
+        timetable.setScope (9,3)
+        timetable.setLocations(['Paris','New York','Chicago','San Francisco','Los Angeles'])
+        timetable.setEvent('lisbon','Barcelona',new Date (2019,8,2,9,00), new Date (2019,8,2,10,30),{url:'#'})
+        timetable.setEvent('lisbon','Barcelona',new Date (2019,8,2,9,00), new Date (2019,8,2,10,30),{onclick:{window.alert(Lisbon)}})
+        
+        var renderer = new Timetable.Renderer(timetable)
+        renderer.draw('.timetable')
+
+    </script>  
+</body>
+</html>
