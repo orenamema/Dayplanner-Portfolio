@@ -1,6 +1,8 @@
 .container{
     height: 700px;
+  
 }
+
 .row{
     height: 11%;
     border: 1px solid;
@@ -13,7 +15,12 @@ img{
     width:30px;
     height:30px;
 }
-
+#top-container.container{
+    height:200px;
+    width: 500px;
+    text-align: center;
+ 
+}
 /* media query here */
 /* @media screen and (max-width:768px) {
     img{
