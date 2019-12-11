@@ -44,3 +44,17 @@ In the following screenshot it was 2:30PM therefore the color for the 2PM-3PM wa
 
 ![alt text](https://github.com/orenamema/Dayplanner-Portfolio/raw/master/Assets/Images/calendar.png)
 
+Following is the code that change to occur throughout the work day:
+
+```javascript
+    console.log(CurrentHour , to_time[hour_arr[i]]);
+    if (CurrentHour < to_time[hour_arr[i]]){
+        text_box.css("background-color", "green");
+    }
+    else if (CurrentHour == to_time[hour_arr[i]]){
+        text_box.css("background-color", "red");
+    }
+    else {
+        text_box.css("background-color", "grey");
+    }
+
