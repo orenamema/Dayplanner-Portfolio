@@ -25,6 +25,7 @@ for (var i=0; i < hour_arr.length; i++){
     var hour_row = $("<div>");
     var hour1 = $("<textarea>");
     hour1.attr("id", "text" + hour_arr[i]);
+    hour1.attr("class", "text-box");
 
 
     the_hours.append(hour_row);
@@ -68,13 +69,12 @@ for (var i=0; i < hour_arr.length; i++){
     saver.attr("src", "http://www.myiconfinder.com/uploads/iconsets/256-256-5522ef02c3bcb2c8389eda0bbc2f4815.png");
     save_box.append(saver);
 
-    var pic = document.getElementById("img" + hour_arr[i]);
-    pic.addEventListener('click', function (event) {
-        // localStorage.setItem(hour_arr[i],  $("textarea#"+ "text" + hour_arr[i]).val() );
-        var my_text = document.getElementById("text" + hour_arr[i]);
-        console.log(document.getElementById("text" + hour_arr[i]));
-      });
-
+    saver.click(function() {
+        var time_part = this.id.substring(3,this.id.length);
+        var text_in_box = document.getElementById("text" + this.id.substring(3,this.id.length)).value;
+        localStorage.setItem(time_part, text_in_box);
+        console.log(time_part,text_in_box);
+    });
 
 }
 
