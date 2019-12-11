@@ -39,3 +39,8 @@ There are 3 files:
 * The current day is displayed at the top of the calendar.
 
 * Each timeblock is color coded to indicate whether it is in a past, present, or future hour.
+
+In the following screenshot it was 2:30PM therefore the color for the 2PM-3PM was red and all the following hours was in green. The hours that have passed all color coded grey.
+
+![alt text](https://github.com/orenamema/Dayplanner-Portfolio/raw/master/Assets/Images/calendar.png)
+
