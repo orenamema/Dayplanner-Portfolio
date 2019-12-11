@@ -12,7 +12,12 @@ The app should display standard business hours (9 a.m. to 5 p.m.). Each time slo
 * A save button
 
 Clicking on the save button will store the time and user input in `localStorage`.
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time.
+
+There are 3 files:
+
+* `index.html`
+* `style.css`
+* `Dayplanner.js`
 
 ## Website
 
