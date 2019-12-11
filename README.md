@@ -21,6 +21,9 @@ There are 3 files:
 
 ## Website
 
+![alt text](https://github.com/orenamema/Dayplanner-Portfolio/raw/master/assets/images/scheduler.gif)
+
+
 ## Requirements
 
 * Functional, deployed application.
