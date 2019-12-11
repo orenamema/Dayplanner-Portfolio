@@ -23,6 +23,7 @@ There are 3 files:
 
 ![alt text](https://github.com/orenamema/Dayplanner-Portfolio/raw/master/Assets/Images/scheduler.gif)
 
+![alt text](https://github.com/orenamema/Dayplanner-Portfolio/raw/master/Assets/Images/dayplanner.gif)
 
 ## Requirements
 
