@@ -21,7 +21,7 @@ There are 3 files:
 
 ## Website
 
-![alt text](https://github.com/orenamema/Dayplanner-Portfolio/raw/master/assets/images/scheduler.gif)
+![alt text](https://github.com/orenamema/Dayplanner-Portfolio/raw/master/Assets/Images/scheduler.gif)
 
 
 ## Requirements
