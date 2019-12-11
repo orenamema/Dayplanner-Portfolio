@@ -4,7 +4,7 @@
 
 .row{
     height: 11%;
-    border: 1px solid;
+    border: 2px solid;
 }
 .col{
     border: 1px dotted;
@@ -32,5 +32,26 @@ textarea {
     height:100%;
     width: 100%;
     background: transparent;
+
+}
+h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium';
+}
+h6{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium'; 
+    margin: 15px;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+    margin: 20px, 0px, 20px;
+    margin-left: 80px ;
+
+}
+.container1{
+   background-color: blueviolet; 
 
 }
