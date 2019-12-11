@@ -12,9 +12,17 @@ The app should display standard business hours (9 a.m. to 5 p.m.). Each time slo
 * A save button
 
 Clicking on the save button will store the time and user input in `localStorage`.
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time.
+
+There are 3 files:
+
+* `index.html`
+* `style.css`
+* `Dayplanner.js`
 
 ## Website
+
+![alt text](https://github.com/orenamema/Dayplanner-Portfolio/raw/master/Assets/Images/scheduler.gif)
+
 
 ## Requirements
 
@@ -31,3 +39,22 @@ You'll need to use the [Moment.js](https://momentjs.com/) library to work with d
 * The current day is displayed at the top of the calendar.
 
 * Each timeblock is color coded to indicate whether it is in a past, present, or future hour.
+
+In the following screenshot it was 2:30PM therefore the color for the 2PM-3PM was red and all the following hours was in green. The hours that have passed all color coded grey.
+
+![alt text](https://github.com/orenamema/Dayplanner-Portfolio/raw/master/Assets/Images/calendar.png)
+
+Following is the code that change to occur throughout the work day:
+
+```javascript
+    console.log(CurrentHour , to_time[hour_arr[i]]);
+    if (CurrentHour < to_time[hour_arr[i]]){
+        text_box.css("background-color", "green");
+    }
+    else if (CurrentHour == to_time[hour_arr[i]]){
+        text_box.css("background-color", "red");
+    }
+    else {
+        text_box.css("background-color", "grey");
+    }
+
