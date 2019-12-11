@@ -1,6 +1,8 @@
 // We create the current date
+
 var CurrentDate = moment().format("dddd, MMMM Do YYYY");
 var CurrentHour = Number(moment().format("HH"));
+
 // console.log(CurrentHour);
 
 $("#theDate").text( CurrentDate );
@@ -14,12 +16,16 @@ to_time = {"9AM": 9, "10AM": 10, "11AM": 11,
             "3PM":15, "4PM":16, "5PM":17};
 
 var the_hours = $("#theHours");
+
 // var 
 // console.log("here OUT ");
 
 for (var i=0; i < hour_arr.length; i++){
     // we create the rows of the table
     var hour_row = $("<div>");
+    var hour1 = $("<textarea>");
+    hour1.attr("id", "text" + hour_arr[i]);
+
 
     the_hours.append(hour_row);
     hour_row.attr("class", "row rounded");
@@ -29,21 +35,21 @@ for (var i=0; i < hour_arr.length; i++){
     time_box.attr("class", "col");
     time_box.text(hour_arr[i]);
     var text_box = $("<div>");
+
+    text_box.append(hour1);
     text_box.attr("class", "col-8");
+
+
+//background colors
     console.log(CurrentHour , to_time[hour_arr[i]]);
     if (CurrentHour < to_time[hour_arr[i]]){
         text_box.css("background-color", "green");
-        console.log("less");
     }
     else if (CurrentHour == to_time[hour_arr[i]]){
         text_box.css("background-color", "red");
-        console.log("equal");
-
     }
     else {
         text_box.css("background-color", "grey");
-        console.log("more");
-
     }
     var save_box = $("<div>");
     save_box.attr("class", "col rounded-right");
@@ -57,9 +63,19 @@ for (var i=0; i < hour_arr.length; i++){
 
     var saver = $("<img>");
     saver.attr("class", "rounded");
+    saver.attr("id", "img" + hour_arr[i]);
     saver.attr("alt", "save the content");
     saver.attr("src", "http://www.myiconfinder.com/uploads/iconsets/256-256-5522ef02c3bcb2c8389eda0bbc2f4815.png");
     save_box.append(saver);
 
+    var pic = document.getElementById("img" + hour_arr[i]);
+    pic.addEventListener('click', function (event) {
+        // localStorage.setItem(hour_arr[i],  $("textarea#"+ "text" + hour_arr[i]).val() );
+        var my_text = document.getElementById("text" + hour_arr[i]);
+        console.log(document.getElementById("text" + hour_arr[i]));
+      });
+
 
 }
+
+//document.getelementbyid localstorage.getitem
